@@ -50,15 +50,14 @@ setInterval(function() {
 }, 100)
 
 //output age of vehicle selected
-//setInterval(function() {
-//  vehicleAgeVar = vehicleAge.value;
-//  ageOutput.innerHTML = "Age selected is: " + vehicleAgeVar;
-//}, 100)
+setInterval(function() {
+  vehicleAgeVar = vehicleAge.value;
+  ageOutput.innerHTML = "Age selected is: " + vehicleAgeVar;
+}, 100)
 
 //output if then calculation based on age -> apr
 setInterval(function() {
   vehicleAgeVar = vehicleAge.value;
-  try {
     if (vehicleAgeVar = "new"){
       aprLogic = floridaAPR[0];
     }
@@ -77,8 +76,5 @@ setInterval(function() {
     else {
       aprLogic = floridaAPR[0];
     }
-  }
-    finally {
       aprBasedOnAge.innerHTML = "APR based on age is: " + aprLogic;
-    }
 }, 100)
