@@ -24,12 +24,13 @@ var dispDiv2 = document.getElementById("totalDebt");
 var dispDiv3 = document.getElementById("monthly");
 var ageOutput = document.getElementById("ageOutput");
 var aprBasedOnAge = document.getElementById("aprBasedOnAge")
+var vehicleAgeVar = "n/a"
 
 //initial calulations
-totalDebt = principal*apr;
+totalDebt = principal*aprLogic;
 mnthlyPmt = totalDebt/termLength;
 
-//Results
+//Results...
 
 //chosen principal from slider
 setInterval(function() {
@@ -39,7 +40,7 @@ setInterval(function() {
 
 //calculated total owed
 setInterval(function() {
-  totalDebt = principal*apr;
+  totalDebt = principal*aprLogic;
   dispDiv2.innerHTML = "Total owed: $" + totalDebt.toFixed(2);
 }, 100)
 
@@ -50,31 +51,31 @@ setInterval(function() {
 }, 100)
 
 //output age of vehicle selected
-setInterval(function() {
-  vehicleAgeVar = vehicleAge.value;
-  ageOutput.innerHTML = "Age selected is: " + vehicleAgeVar;
-}, 100)
+//setInterval(function() {
+//  vehicleAgeVar = vehicleAge.value;
+//  ageOutput.innerHTML = "Age selected is: " + vehicleAgeVar;
+//}, 100)
 
 //output if then calculation based on age -> apr
 setInterval(function() {
   vehicleAgeVar = vehicleAge.value;
-    if (vehicleAgeVar = "new"){
+    if (vehicleAgeVar == "new"){
       aprLogic = floridaAPR[0];
     }
-    else if (vehicleAgeVar = "used"){
+    else if (vehicleAgeVar == "used"){
       aprLogic = floridaAPR[1];
     }
-    else if (vehicleAgeVar = "1or2Years"){
+    else if (vehicleAgeVar == "1or2Years"){
       aprLogic = floridaAPR[2];
     }
-    else if (vehicleAgeVar = "over2Years"){
+    else if (vehicleAgeVar == "over2Years"){
       aprLogic = floridaAPR[3];
     }
-    else if (vehicleAgeVar = "over4Years"){
+    else if (vehicleAgeVar == "over4Years"){
       aprLogic = floridaAPR[4];
     }
     else {
       aprLogic = floridaAPR[0];
     }
-      aprBasedOnAge.innerHTML = "APR based on age is: " + aprLogic;
+  aprBasedOnAge.innerHTML = "APR based on age is: " + aprLogic;
 }, 100)
