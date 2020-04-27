@@ -92,7 +92,7 @@ setInterval(function() {
     else {
       aprLogic = floridaAPR[0];
     }
-  aprBasedOnAge.innerHTML = "Maximum APR based on vehicle age is: " + "%" + ((aprLogic-1)*100).toFixed(2);
+  aprBasedOnAge.innerHTML = "Maximum APR based on vehicle age is: " + ((aprLogic-1)*100).toFixed(2) + "%";
 
 }, 100)
 
