@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>
       Loan Calculator
     </title>
@@ -54,6 +54,7 @@
       </select>
     </div><br>
 
+<!--max APR should change based on state selected
     <div class ="state">
       <label for="state">State of residence:</label>
       <select id="state">
@@ -61,19 +62,18 @@
         <option value="texas">Texas</option>
       </select>
     </div><br>
-
+-->
 
     <p>
       <span id="demo"></span> <br>
-      <span id="totalDebt"></span> <br>
       <span id="monthly"></span> <br>
-      <span id="ageOutput"></span> <br>
       <span id="aprBasedOnAge"></span> <br>
     </p>
 
-    <div class = "term">
-      <label for="term">Change length of term to:</label>
-      <input type="number" id="term" name="term" value="72" min="1" max="72">
+    <div class = "termInput">
+      <span id="term"></span><br>
+      <label for="termInput">Change length of term to:</label>
+      <input type="number" id="termInput" name="termInput" value="40" min="1" max="72">
       months
     </div>
 
