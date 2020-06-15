@@ -1,90 +1,65 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>
-      Loan Calculator
-    </title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0,
+    maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Mauricio Urrego</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jqueryfunc.js"></script>
   </head>
 
-  <h1>
-    Loan Estimator
-  </h1>
+<div id="cover"></div>
 
-  <h2>
-    Slide to preferred borrow amount.
-  </h2>
+<header> <a href = "https://github.com/Mauricio-Urrego">This page will be updated throughout my career to be
+   more life-like and feature-rich as my skills improve over time. Click here to learn more. </a> </header>
 
-  <body>
-    <div class="parent">
-      <div class="slidecontainer">
-        <input type="range" min="1" max="25000" value="6000" class="slider" id="myRange">
-      </div>
-    </div><br>
+<body>
 
-    <div class ="carorpickup">
-      <label for="vehType">Vehicle Type:</label>
-      <select id="vehType">
-        <option value="car">Car</option>
-        <option value="pickup">Pickup Truck</option>
-      </select>
-    </div><br>
+<div id = "wrapper">
+<div class = "planets_and_me">
+  <a href = "#" class= "deg0">
+  <img src="content/planet_1_final.png" id="planet1" alt="planet_1"> <div class="linktext">About Me</div> </img>
+  </a>
+  <a href = "#" class= "deg60">
+  <img src="content/planet_2_final.png" id="planet2" alt="planet_2"> <div class="linktext">Dashboards</div> </img>
+  </a>
+  <a href = "#" class= "deg120">
+  <img src="content/planet_3_final.png" id="planet3" alt="planet_3"> <div class="linktext">Wordpress (CMS)</div> </img>
+  </a>
+  <a href = "#" class= "deg180">
+  <img src="content/planet_4_final.png" id="planet4" alt="planet_4"> <div class="linktext">SQL</div> </img>
+  </a>
+  <a href = "#" class= "deg240">
+  <img src="content/planet_5_final.png" id="planet5" alt="planet_5"> <div class="linktext">Data Scraping</div> </img>
+  </a>
+  <a href = "#" class= "deg300">
+  <img src="content/planet_6_final.png" id="planet6" alt="planet_6"> <div class="linktext">Web Apps</div> </img>
+</a><!--
+  <a href = "#" class= "deg0">
+  <img src="content/planet_7.png" alt="planet_7">
+  </a>
+  <a href = "#" class= "deg0">
+  <img src="content/planet_8.png" alt="planet_8">
+  </a>
+  <a href = "#" class= "deg0">
+  <img src="content/planet_9.png" alt="planet_9">
+  </a>
+  <a href = "#" class= "deg0">
+  <img src="content/planet_10.png" alt="planet_10">
+</a>-->
+  <a href = "#" class= "center">
+  <img src="content/me_final.png" alt="me" id="me" onmouseover='hover()' onmouseout='mouseout()'>
+</a>
+</div>
+</div>
 
-    <div class ="vehicleAge">
-      <label for="age">Vehicle Age:</label>
-      <select id="age">
-        <option value="new">New</option>
-        <option value="used">Current year used</option>
-        <option value="1or2Years">1-2 years old</option>
-        <option value="over2Years">Older than 2 years</option>
-        <option value="over4Years">Older than 4 years</option>
-      </select>
-    </div><br>
+<video autoplay muted loop id="myVideo">
+  <source src="content/stars.mp4" type="video/mp4">
+</video>
 
-    <div class ="vehicleMiles">
-      <label for="miles">Vehicle Miles:</label>
-      <select id="miles">
-        <option value="lowmiles">Less than 50,000</option>
-        <option value="mediummiles1">50,001 – 80,000</option>
-        <option value="mediummiles2">80,001 – 100,000</option>
-        <option value="highmiles">100,001 – 125,000</option>
-        <option value="highestmiles">125,001 – 150,000</option>
-      </select>
-    </div><br>
-
-<!--max APR should change based on state selected
-    <div class ="state">
-      <label for="state">State of residence:</label>
-      <select id="state">
-        <option value="florida">Florida</option>
-        <option value="texas">Texas</option>
-      </select>
-    </div><br>
--->
-
-    <p>
-      <span id="demo"></span> <br>
-      <span id="monthly"></span> <br>
-      <span id="aprBasedOnAge"></span> <br>
-    </p>
-
-    <div class = "termInput">
-      <span id="term"></span><br>
-      <label for="termInput">Change length of term to:</label>
-      <input type="number" id="termInput" name="termInput" value="40" min="1" max="72">
-      months
-    </div>
-<!-- submit to representative feature I am building
-    <div class = "submit">
-      <span id="submit"></span><br>
-      <label for="submit">Submit your quote to contact a representative</label>
-      <input type="submit" id="submit" name="submit" value="submit">
-    </div>
--->
-    <script src="sliderScripts.js"></script>
-
-  </body>
-
+</body>
 </html>
