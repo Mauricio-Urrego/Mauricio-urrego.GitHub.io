@@ -1,1 +1,144 @@
+#cover {
+    background: #000000;
+    z-index: 2;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
 
+body {
+  overflow: hidden;
+}
+
+header {
+  color: white;
+  text-align: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.linktext {
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planets_and_me {
+    	position: relative;
+    	width: 48em;
+    	height: 48em;
+    	padding: 2.8em;
+        /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*//*
+    	border: dashed 1px;
+    	border-radius: 50%;*/
+    	margin: 1.75em auto 0;
+    }
+
+.planets_and_me a {
+  	display: block;
+  	position: fixed;
+  	bottom: 128px; left: 50%;
+  	width: 16em; height: 16em;
+  	margin: -8em;
+  }
+
+.planets_and_me img { display: block; width: 100%; }
+.deg0 { transform: rotate(-0deg) translate(24em) rotate(0deg);
+  -webkit-animation:spin 100s linear infinite;
+     -moz-animation:spin 100s linear infinite;
+          animation:spin 100s linear infinite;} /* 24em = half the width of the wrapper */
+.deg60 { transform: rotate(-60deg) translate(24em) rotate(60deg);
+  -webkit-animation:spin1 100s linear infinite;
+     -moz-animation:spin1 100s linear infinite;
+          animation:spin1 100s linear infinite; }
+.deg120 { transform: rotate(-120deg) translate(24em) rotate(120deg);
+  -webkit-animation:spin2 100s linear infinite;
+     -moz-animation:spin2 100s linear infinite;
+          animation:spin2 100s linear infinite;}
+.deg180 { transform: rotate(-180deg) translate(24em) rotate(180deg);
+  -webkit-animation:spin3 100s linear infinite;
+     -moz-animation:spin3 100s linear infinite;
+          animation:spin3 100s linear infinite;}
+.deg240 { transform: rotate(-240deg) translate(24em) rotate(240deg);
+  -webkit-animation:spin4 100s linear infinite;
+     -moz-animation:spin4 100s linear infinite;
+          animation:spin4 100s linear infinite;}
+.deg300 { transform: rotate(-300deg) translate(24em) rotate(300deg);
+  -webkit-animation:spin5 100s linear infinite;
+     -moz-animation:spin5 100s linear infinite;
+          animation:spin5 100s linear infinite; }
+
+@-moz-keyframes        spin { 100% { -moz-transform: rotate(360deg) translate(24em)   rotate(-360deg); } }
+@-webkit-keyframes  spin { 100% { -webkit-transform: rotate(360deg) translate(24em)   rotate(-360deg); } }
+@keyframes          spin { 100% { -webkit-transform: rotate(360deg) translate(24em)   rotate(-360deg);
+                                           transform:rotate(360deg) translate(24em)   rotate(-360deg); } }
+
+@-moz-keyframes       spin1 { 100% { -moz-transform: rotate(300deg) translate(24em)  rotate(-300deg); } }
+@-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(300deg) translate(24em)  rotate(-300deg); } }
+@keyframes         spin1 { 100% { -webkit-transform: rotate(300deg) translate(24em)  rotate(-300deg);
+                                           transform:rotate(300deg) translate(24em)  rotate(-300deg); } }
+
+@-moz-keyframes       spin2 { 100% { -moz-transform: rotate(240deg) translate(24em) rotate(-240deg); } }
+@-webkit-keyframes spin2 { 100% { -webkit-transform: rotate(240deg) translate(24em) rotate(-240deg); } }
+@keyframes         spin2 { 100% { -webkit-transform: rotate(240deg) translate(24em) rotate(-240deg);
+                                           transform:rotate(240deg) translate(24em) rotate(-240deg); } }
+
+@-moz-keyframes       spin3 { 100% { -moz-transform: rotate(180deg) translate(24em) rotate(-180deg); } }
+@-webkit-keyframes spin3 { 100% { -webkit-transform: rotate(180deg) translate(24em) rotate(-180deg); } }
+@keyframes         spin3 { 100% { -webkit-transform: rotate(180deg) translate(24em) rotate(-180deg);
+                                           transform:rotate(180deg) translate(24em) rotate(-180deg); } }
+
+@-moz-keyframes       spin4 { 100% { -moz-transform: rotate(120deg) translate(24em) rotate(-120deg); } }
+@-webkit-keyframes spin4 { 100% { -webkit-transform: rotate(120deg) translate(24em) rotate(-120deg); } }
+@keyframes         spin4 { 100% { -webkit-transform: rotate(120deg) translate(24em) rotate(-120deg);
+                                           transform:rotate(120deg) translate(24em) rotate(-120deg); } }
+
+@-moz-keyframes       spin5 { 100% { -moz-transform: rotate(60deg) translate(24em) rotate(-60deg); } }
+@-webkit-keyframes spin5 { 100% { -webkit-transform: rotate(60deg) translate(24em) rotate(-60deg); } }
+@keyframes         spin5 { 100% { -webkit-transform: rotate(60deg) translate(24em) rotate(-60deg);
+                                           transform:rotate(60deg) translate(24em) rotate(-60deg); } }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .linktext {
+    padding: 0rem;
+    font-size: 16px;
+  }
+
+  .planets_and_me {
+    width: 16em;
+    height: 16em;
+  }
+  .planets_and_me a {
+      left: 37%;
+      bottom: 48px;
+    	width: 12em; height: 12em;
+    	margin: -3em;
+    }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
