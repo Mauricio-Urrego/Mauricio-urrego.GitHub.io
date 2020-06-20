@@ -115,7 +115,7 @@ a {
 @keyframes         spin5 { 100% { -webkit-transform: rotate(60deg) translate(24em) rotate(-60deg);
                                            transform:rotate(60deg) translate(24em) rotate(-60deg); } }
 
-@media only screen and (min-device-width : 1px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .linktext {
     padding: 0rem;
