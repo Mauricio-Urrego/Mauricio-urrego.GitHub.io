@@ -1,8 +1,8 @@
 # mauricio-urrego.github.io
 
-My plan for this site is to act as a catch-all portfolio for everything I have ever worked on (that is shareable, of course there are proprietary works that I may not share because of a non-disclosure agreement, among other reasons).
+My plan for this site is to act as a catch-all portfolio for everything I have ever worked on (that is considered shareable).
 
-As we know, anything in the coding world, especially in web development, can be improved over time as new skills are learned or as we add more functionality over time. I want this site to consistently evolve over my career. Some ideas I have for the future of the site are below. If you'd like to try your hand at doing anything in the list, please let me know! Feel free to clone this repo and make your changes.
+I want this site to consistently evolve over my career. Some ideas I have for the future of the site are below. If you'd like to try your hand at doing anything in the list, please let me know! Feel free to clone this repo and make your changes.
 
 Ideas:
 1. Make circle of planets into an oval shape with a vanishing point to give the illusion of depth.
