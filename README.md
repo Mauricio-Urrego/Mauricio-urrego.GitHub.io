@@ -12,7 +12,7 @@ Ideas:
 5. Click on me and I transform into a rocket and blast off.
 6. Photoshop of me holding a sign, saying something different every refresh.
 7. Replace images of planets with rotating 3D videos.
-8. Replace image of me with 360 degree rotating video (I need a special camera for this if anyone has one).
+8. Replace image of me with 360 degree rotating video.
 9. Make the site entirely Virtual Reality compatible.
 10. Make the site Augmented Reality compatible.
 11. Integrate a space invader-like game into the site as a sort of easter egg.
