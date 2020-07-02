@@ -115,6 +115,18 @@ a {
 @keyframes         spin5 { 100% { -webkit-transform: rotate(60deg) translate(24em) rotate(-60deg);
                                            transform:rotate(60deg) translate(24em) rotate(-60deg); } }
 
+.planets_and_me img:hover {
+  filter: drop-shadow(0 0 140px /*30px*/ #0ff);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.planets_and_me .linktext:hover ~ img{
+  filter: drop-shadow(0 0 140px /*30px*/ #0ff);
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .linktext {
