@@ -8,7 +8,7 @@ Ideas:
 1. Make circle of planets into an oval shape with a vanishing point to give the illusion of depth.
 2. Planets move slower when farther behind me and faster when in front of me.
 3. Click a planet's link and the screen earthquake shakes before a rocket takes over the screen. The rocket zooms by, the screen flashes to white, and then the link loads.
-4. On mouse hover the hovered on planet glows from behind.
+4. On mouse hover the hovered on planet glows from behind. (done ✔)
 5. Click on me and I transform into a rocket and blast off.
 6. Photoshop of me holding a sign, saying something different every refresh.
 7. Replace images of planets with rotating 3D videos.
