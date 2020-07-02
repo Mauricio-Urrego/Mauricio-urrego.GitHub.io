@@ -1,5 +1,8 @@
 /*animation and effects*/
 
+var crossArmedPreload = new Image();
+crossArmedPreload.src = 'content/crossarmed.png';
+
 function hover() {
   document.getElementById("me").src = "content/crossarmed.png";
 }
