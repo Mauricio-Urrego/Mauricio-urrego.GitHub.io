@@ -29,6 +29,7 @@ a {
 }
 
 .linktext {
+  z-index: 1;
   font-weight: bold;
   text-align: center;
   color: #fff;
