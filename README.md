@@ -1,4 +1,4 @@
-# mauricio-urrego.github.io
+# Retro Portfolio
 
 My plan for this site is to act as a catch-all portfolio for everything I have ever worked on (that is considered shareable).
 
