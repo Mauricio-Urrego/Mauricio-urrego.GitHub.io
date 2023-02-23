@@ -62,29 +62,29 @@ a {
 
 .planets_and_me img { display: block; width: 100%; }
 .deg0 { transform: rotate(-0deg) translate(24em) rotate(0deg);
-  -webkit-animation:spin 100s linear infinite;
-     -moz-animation:spin 100s linear infinite;
-          animation:spin 100s linear infinite;} /* 24em = half the width of the wrapper */
+  -webkit-animation:spin 100s ease infinite;
+     -moz-animation:spin 100s ease infinite;
+          animation:spin 100s ease infinite;} /* 24em = half the width of the wrapper */
 .deg60 { transform: rotate(-60deg) translate(24em) rotate(60deg);
-  -webkit-animation:spin1 100s linear infinite;
-     -moz-animation:spin1 100s linear infinite;
-          animation:spin1 100s linear infinite; }
+  -webkit-animation:spin1 100s ease infinite;
+     -moz-animation:spin1 100s ease infinite;
+          animation:spin1 100s ease infinite; }
 .deg120 { transform: rotate(-120deg) translate(24em) rotate(120deg);
-  -webkit-animation:spin2 100s linear infinite;
-     -moz-animation:spin2 100s linear infinite;
-          animation:spin2 100s linear infinite;}
+  -webkit-animation:spin2 100s ease infinite;
+     -moz-animation:spin2 100s ease infinite;
+          animation:spin2 100s ease infinite;}
 .deg180 { transform: rotate(-180deg) translate(24em) rotate(180deg);
-  -webkit-animation:spin3 100s linear infinite;
-     -moz-animation:spin3 100s linear infinite;
-          animation:spin3 100s linear infinite;}
+  -webkit-animation:spin3 100s ease infinite;
+     -moz-animation:spin3 100s ease infinite;
+          animation:spin3 100s ease infinite;}
 .deg240 { transform: rotate(-240deg) translate(24em) rotate(240deg);
-  -webkit-animation:spin4 100s linear infinite;
-     -moz-animation:spin4 100s linear infinite;
-          animation:spin4 100s linear infinite;}
+  -webkit-animation:spin4 100s ease infinite;
+     -moz-animation:spin4 100s ease infinite;
+          animation:spin4 100s ease infinite;}
 .deg300 { transform: rotate(-300deg) translate(24em) rotate(300deg);
-  -webkit-animation:spin5 100s linear infinite;
-     -moz-animation:spin5 100s linear infinite;
-          animation:spin5 100s linear infinite; }
+  -webkit-animation:spin5 100s ease infinite;
+     -moz-animation:spin5 100s ease infinite;
+          animation:spin5 100s ease infinite; }
 
 @-moz-keyframes        spin { 100% { -moz-transform: rotate(360deg) translate(24em)   rotate(-360deg); } }
 @-webkit-keyframes  spin { 100% { -webkit-transform: rotate(360deg) translate(24em)   rotate(-360deg); } }
@@ -131,7 +131,7 @@ a {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .linktext {
-    padding: 0rem;
+    padding: 0;
     font-size: 16px;
   }
 
