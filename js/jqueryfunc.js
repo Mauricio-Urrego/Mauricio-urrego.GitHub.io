@@ -12,5 +12,5 @@ function mouseout() {
 }
 
 $(window).on('load', function(){
-    $('#cover').fadeOut(3000);
+    $('#cover').fadeOut(5000);
 });
